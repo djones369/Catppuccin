@@ -1,7 +1,11 @@
-Catppuccin Flatpak Compatibility
+## Override flatpak themes to ~/.themes:
+sudo flatpak override --filesystem=$HOME/.themes
 
-sudo flatpak override flatpak themes to ~/.themes: sudo flatpak override --filesystem=$HOME/.themes
-sudo flatpak override flatpak icons to ~/.icons: sudo flatpak override --filesystem=$HOME/.icons
-sudo flatpak override flatpak themes to ~/.config/gtk-4.0 locally: flatpak override --user --filesystem=xdg-config/gtk-4.0
-sudo flatpak override flatpak themes to ~/.config/gtk-4.0 globally: sudo flatpak override --filesystem=xdg-config/gtk-4.0
+## Override flatpak icons to ~/.icons:
+sudo flatpak override --filesystem=$HOME/.icons
 
+## Override flatpak themes to ~/.config/gtk-4.0 locally:
+flatpak override --user --filesystem=xdg-config/gtk-4.0
+
+## Override flatpak themes to ~/.config/gtk-4.0 globally:
+sudo flatpak override --filesystem=xdg-config/gtk-4.0
